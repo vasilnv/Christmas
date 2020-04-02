@@ -23,9 +23,6 @@ public class Workshop {
 		}
 	}
 
-	/**
-	 * Adds a gift to the elves' backlog.
-	 **/
 	public synchronized void postWish(Gift gift) {
 		gifts.add(gift);
 		this.notifyAll();
